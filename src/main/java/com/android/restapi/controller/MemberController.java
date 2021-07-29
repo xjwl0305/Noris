@@ -16,13 +16,14 @@ import java.util.Map;
 import java.util.Optional;
 
 @RequestMapping("/NorisAPI")
+@CrossOrigin
 @RestController
 public class MemberController {
 
     @Autowired
     public MemberRepository memberRepository;
 
-    @CrossOrigin
+
     @RequestMapping("/login")
     public login_response login(@RequestParam(name="id") String ID, @RequestParam(name="password") String Password){
         List<user> login = memberRepository.findUser(ID, Password);
