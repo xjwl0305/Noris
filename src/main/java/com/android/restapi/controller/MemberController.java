@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-@CrossOrigin(origins = {"http://localhost:8080", "http://localhost:3333"})
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("/NorisAPI")
 @RestController
 public class MemberController {
