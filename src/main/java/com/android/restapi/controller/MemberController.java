@@ -16,6 +16,7 @@ import java.util.Map;
 import java.util.Optional;
 
 @RequestMapping("/NorisAPI")
+@CrossOrigin("*")
 @RestController
 public class MemberController {
 
