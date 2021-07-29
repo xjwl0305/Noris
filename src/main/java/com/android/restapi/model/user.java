@@ -32,4 +32,19 @@ public class user {
     }
     public user() {
     }
+
+    public String getName() {
+        return Name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+    public String getCompany() {
+        return company;
+    }
 }
